@@ -1,25 +1,25 @@
 {
-    "name": "mondayti/flarum-force-login",
-    "description": "Torna o login obrgatório para ler as discussões.",
-    "type": "flarum-extension",
-    "version": "1.0.0",
-    "minimum-stability": "beta",
-    "require": {
-        "flarum/core": ">=0.1.0-beta.16 <=0.1.0"
-    },
-    "autoload": {
-        "psr-4": {
-            "Mondayti\\FlarumForceLogin\\": "src/"
-        }
-    },
-    "extra": {
-        "flarum-extension": {
-            "title": "Flarum Force LogIn",
-            "icon": {
-                "name": "fas fa-smile",
-                "backgroundColor": "#238c59",
-                "color": "#fff"
-            }
-        }
+  "name": "mondayti/flarum-force-login",
+  "description": "Torna o login obrgatório para ler as discussões.",
+  "type": "flarum-extension",
+  "version": "1.0.1",
+  "minimum-stability": "beta",
+  "require": {
+    "flarum/core": ">=0.1.0-beta.16 <=0.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Mondayti\\FlarumForceLogin\\": "src/"
     }
+  },
+  "extra": {
+    "flarum-extension": {
+      "title": "Flarum Force LogIn",
+      "icon": {
+        "name": "fas fa-smile",
+        "backgroundColor": "#238c59",
+        "color": "#fff"
+      }
+    }
+  }
 }
