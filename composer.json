@@ -3,7 +3,7 @@
   "description": "Torna o login obrgatório para ler as discussões.",
   "type": "flarum-extension",
   "version": "1.0.1",
-  "minimum-stability": "beta",
+  "minimum-stability": "dev",
   "require": {
     "flarum/core": ">=0.1.0-beta.13 <=0.1.0"
   },
