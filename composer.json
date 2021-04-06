@@ -2,8 +2,7 @@
   "name": "mondayti/flarum-force-login",
   "description": "Torna o login obrgatório para ler as discussões.",
   "type": "flarum-extension",
-  "version": "1.0.1",
-  "minimum-stability": "dev",
+  "version": "1.0.1-stable",
   "require": {
     "flarum/core": ">=0.1.0-beta.13 <=0.1.0"
   },
