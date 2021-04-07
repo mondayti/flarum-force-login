@@ -50,7 +50,13 @@ function carregarElementoReact(elemento) {
 }
 
 var observer = new MutationObserver(_ => {
-  let currentRoute = location.pathname;
+  let x = location.pathname.split("/");
+
+  let currentRoute = "";
+  x.forEach(part => {
+    n = +part;
+    if (!n) currentRoute += part != "" ? `/${part}` : "";
+  });
   if (lastRoute != currentRoute) {
     lastRoute = currentRoute;
     if (currentRoute.match(/^\/d\/*/g)) {
