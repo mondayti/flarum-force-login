@@ -2,7 +2,7 @@
   "name": "mondayti/flarum-force-login",
   "description": "Torna o login obrgatório para ler as discussões.",
   "type": "flarum-extension",
-  "version": "1.0.4-stable",
+  "version": "1.0.5-stable",
   "autoload": {
     "psr-4": {
       "Mondayti\\FlarumForceLogin\\": "src/"

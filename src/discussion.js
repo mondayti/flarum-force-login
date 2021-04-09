@@ -21,14 +21,21 @@ function initBlockEscInputs() {
 
 function forceLogin() {
   const modalMng = document.querySelector(".ModalManager");
-  document.head.innerHTML +=
-    "<style>.modal-dialog{z-index:9999;} .Modal-close{display:none;}</style>";
+  const styles = `
+  .Modal-close{
+    display:none;
+  }
+  #modal{
+    pointer-events: none;
+  }
+  #modal .Modal-content{
+    pointer-events: all;
+  }
+  `;
+  document.head.innerHTML += `<style>${styles}</style>`;
 
   setTimeout(_ => {
-    let bg = document.createElement("div");
-    bg.classList.add("modal-backdrop", "fade", "in");
     document.querySelector(".item-signUp button").click();
-    document.querySelector(".modal-backdrop").remove();
     const modalHeader = document.querySelector(".Modal-header");
     let txt = document.createElement("span");
     txt.innerText = "Cadastre-se gratuitamente para continuar navegando";
@@ -39,7 +46,6 @@ function forceLogin() {
     txt.style.margin = "10px";
 
     modalHeader.append(txt);
-    modalMng.append(bg);
   }, 3000);
 }
 
