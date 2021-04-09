@@ -20,7 +20,6 @@ function initBlockEscInputs() {
 }
 
 function forceLogin() {
-  const modalMng = document.querySelector(".ModalManager");
   const styles = `
   .Modal-close{
     display:none;
@@ -28,8 +27,25 @@ function forceLogin() {
   #modal{
     pointer-events: none;
   }
-  #modal .Modal-content{
+  #modal .Modal-content {
     pointer-events: all;
+    overflow-y: overlay;
+    max-height: 80vh;
+  }
+  .modal-open .ModalManager {
+      height: 100vh;
+  }
+  .Modal {
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100%;
+  }
+  @media (max-width:767px){
+    .Modal {
+      display: block;
+    }
   }
   `;
   document.head.innerHTML += `<style>${styles}</style>`;
